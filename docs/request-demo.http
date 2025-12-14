@@ -1,0 +1,12 @@
+POST http://localhost:3000/api/send-message
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Pedro",
+    "phone": "41989898",
+    "acceptWhatsappMessage": true,
+    "termsAccepted": true,
+    "amessage": "message",
+    "subject": "subject"
+}
