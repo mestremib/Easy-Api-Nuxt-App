@@ -5,11 +5,10 @@ export default defineNuxtConfig({
     nitro: {
         routeRules: {
             '/api/**': {
-                cors: true,
                 headers: {
-                    'Access-Control-Allow-Methods': 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-                    'Access-Control-Allow-Headers': '*', // Allow all headers
-                    'Access-Control-Max-Age': '86400', // Optional: cache preflight requests
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Methods': 'GET,POST,PUT,DELETE,OPTIONS',
+                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
                 },
             },
         },
